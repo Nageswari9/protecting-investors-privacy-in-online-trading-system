@@ -1,0 +1,92 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Business Subscription Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="css1/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css1/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css1?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<!-- //web-fonts -->    <link href="css/style_b.css" rel='stylesheet' type='text/css' /><!-- BackButton css -->
+
+<script>
+function validate(evt) {
+	  var theEvent = evt || window.event;
+
+	  // Handle paste
+	  if (theEvent.type === 'paste') {
+	      key = event.clipboardData.getData('text/plain');
+	  } else {
+	  // Handle key press
+	      var key = theEvent.keyCode || theEvent.which;
+	      key = String.fromCharCode(key);
+	  }
+	  var regex = /[0-9]|\./;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	};
+
+
+
+
+</script>
+</head>
+<body>
+	<div class="center-container">
+		<!--header-->
+		<div class="header-w3l">
+			<h1><span>O</span>NLINE <span>T</span>RADING <span>S</span>YSTEM</h1>
+		</div>
+		<!--//header-->
+		<!--main-->
+		<div class="main-content-agile">
+			<div class="wthree-pro">
+				<h2>INTERAGENT REGISTER</h2>
+			</div>
+			<div class="sub-main-w3">	
+			<form action="bregisterdb.jsp" method="post">
+					<input placeholder="Name" name="name" type="text" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input placeholder="E-mail" name="email"type="email" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-envelope" aria-hidden="true"></i></span>
+					<input placeholder="Password" name="pass" type="password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input placeholder="ConfirmPassword" name="cpass" type="password" required=""  onkeyup="checkPass();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input  placeholder="Phone Number"  MAXLENGTH="10" onkeypress='validate(event)' name="mobile"  type="tel" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-phone" aria-hidden="true"></i></span>
+					<input  placeholder="Address"  name="place"  type="text" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+					<input placeholder="State" name="state"  type="text" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input placeholder="Company" name="company"  type="text" required="" AUTOCOMPLETE="off">
+					<span class=""><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input type="submit" value="REGISTER NOW">
+				</form>
+			</div>
+		</div>
+		<!--//main-->
+		<!--footer-->
+		<!-- <div class="footer">
+			<p>&copy; 2018 Business Subscription Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+		</div> -->
+		<!--//footer-->
+	</div>
+</body>
+</html>

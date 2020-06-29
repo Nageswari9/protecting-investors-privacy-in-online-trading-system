@@ -1,0 +1,130 @@
+﻿<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Share Holders Registration</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Auditions Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="css4/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->    <link href="css/style_b.css" rel='stylesheet' type='text/css' /><!-- BackButton css -->
+
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+<script>
+function validate(evt) {
+	  var theEvent = evt || window.event;
+
+	  // Handle paste
+	  if (theEvent.type === 'paste') {
+	      key = event.clipboardData.getData('text/plain');
+	  } else {
+	  // Handle key press
+	      var key = theEvent.keyCode || theEvent.which;
+	      key = String.fromCharCode(key);
+	  }
+	  var regex = /[0-9]|\./;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	};
+</script>
+
+
+</head>
+<body>
+<!-- banner -->
+	<div class="center-container">
+	<div class="banner-dott">
+		<div class="main">
+			<h1 class="w3layouts_head">Register as Share Holder</h1>
+				<div class="w3layouts_main_grid">
+					<form action="eregisterdb.jsp" method="post" class="w3_form_post">
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Name</label>
+								<input type="text" name="name" placeholder="Share Holder Name" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Your Email </label>
+								<input type="text" name="email" placeholder="Your Email" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Password </label>
+								<input type="text" name="pass"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Confirm Password </label>
+								<input type="text" name="cpass"  onkeyup="checkPass();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Confirm Password" required="">
+							</span>
+						</div>
+				
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Phone Number </label>
+								<input type="text" name="mobile" MAXLENGTH="10" onkeypress='validate(event)' placeholder="Phone Number" required="">
+								</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Address</label>
+								<input type="text" name="place" placeholder="Address" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>State</label>
+								<input type="text" name="state" placeholder="State" required="">
+							</span>
+						</div>
+						
+					
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+			<!-- <div class="w3layouts_copy_right">
+				<div class="container">
+					<p>© 2017 Auditions Registration Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	</div>
+<!-- //footer -->
+</body>
+</html>
